@@ -1,0 +1,21 @@
+The options are:
+    0: Los Angeles
+    1: San Francisco
+    2: San Luis Obispo
+Where to start? 
+Welcome to San Francisco!
+The options are:
+    0: Los Angeles
+    1: San Luis Obispo
+Where to next? 
+Welcome to San Luis Obispo!
+The options are:
+    0: Los Angeles
+    1: San Francisco
+Where to next? 
+Welcome to Los Angeles!
+The options are:
+    0: San Francisco
+    1: San Luis Obispo
+Where to next? 
+Welcome home! Your total distance traveled is 802.
