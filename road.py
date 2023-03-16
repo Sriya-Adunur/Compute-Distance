@@ -14,7 +14,11 @@ class Road:
         :param end: The City at the end of this Road
         :param distance: The length of this Road
         """
-        pass
+        self.start = start
+        self.end = end
+        self.distance = distance
+
+        self.start.roads[self.end.name] = self 
 
     def __eq__(self, other):
         """
@@ -25,7 +29,10 @@ class Road:
         :return: Whether or not the other value is a Road with the same
                  starting City, ending City, and distance
         """
-        pass
+        if self.start == other.start and self.end == other.end and self.distance == other.distance:
+            return True
+        else:
+            return False
 
     def __repr__(self):
         """
@@ -35,4 +42,4 @@ class Road:
         :return: The starting and ending City names and distance of this Road,
                  as a string of the form "START to END (DISTANCE)"
         """
-        pass
+        return str(self.start.name) + " to " + str(self.end.name) + " (" + str(self.distance) + ")"
