@@ -34,14 +34,12 @@ def main():
         d.append(dict(zip(keys,(items))))   
 
     print("The options are:")
-    city = {}
     for i in range(len(cities)):
-        city[i] = cities[i]
-        print("    " + str(i) + ": " + city[i])
+        print("    " + str(i) + ": " + cities[i])
     key = int(input("Where to start? \n"))
-    home = city[key] 
+    home = cities[key] 
     distance = 0
-    temp = city
+    temp = cities
    
     end = ""
     while end != home:
