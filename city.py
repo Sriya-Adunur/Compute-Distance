@@ -24,7 +24,7 @@ class City:
         :return: Whether or not the other value is a City with the same name;
                  you may assume Cities with the same name have the same Roads
         """
-        if self.name == other.name:
+        if type(other) == City and self.name == other.name:
            return True
         else:
            return False
