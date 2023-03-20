@@ -29,7 +29,7 @@ class Road:
         :return: Whether or not the other value is a Road with the same
                  starting City, ending City, and distance
         """
-        if self.start == other.start and self.end == other.end and self.distance == other.distance:
+        if type(other) == Road and self.start == other.start and self.end == other.end and self.distance == other.distance:
             return True
         else:
             return False
